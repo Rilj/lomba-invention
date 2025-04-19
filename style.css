@@ -1,0 +1,454 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} body {
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    scale: 0.5;
+    transition: all 0.5s;
+} .show {
+    opacity: 1;
+    scale: 1;
+}
+
+/* Start of Navigation Bar */
+nav {
+    flex-direction: row;
+    box-shadow: var(--m-3-elevation-light-4, 0px 6px 10px 4px rgba(0, 0, 0, 0.15)), var(--m-3-elevation-light-4, 0px 2px 3px 0px rgba(0, 0, 0, 0.3));
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16.5px 39px;
+} nav span:nth-child(1) {
+    margin-right: 24px;
+    width: 120px;
+    justify-content: center;
+} nav span:nth-child(1) a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    overflow-wrap: break-word;
+} 
+
+
+
+nav span:nth-child(2):hover {
+    background-color: #155f58;
+    border-radius: 3px;
+    padding: 20px;
+    overflow: hidden;
+} nav span:nth-child(2) a:hover {
+    color: white;
+}
+
+
+
+nav span:nth-child(2), nav span:nth-child(3), nav span:nth-child(4) {
+    border-radius: 50px;
+    margin: 12.5px 0;
+    display: flex;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+} nav span:nth-child(2) a, nav span:nth-child(3) a, nav span:nth-child(4) a {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--extra-light-text, #808080);
+    text-decoration: none;
+} nav span:nth-child(2):hover, nav span:nth-child(3):hover, nav span:nth-child(4):hover {
+    background-color: #155f58;
+    border-radius: 10px;
+    padding: 20px;
+} nav span:nth-child(2) a:hover, nav span:nth-child(3) a:hover, nav span:nth-child(4) a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+nav button {
+    box-shadow: var(--m-3-elevation-light-4, 0px 6px 10px 4px rgba(0, 0, 0, 0.15)), var(--m-3-elevation-light-4, 0px 2px 3px 0px rgba(0, 0, 0, 0.3));
+    border-radius: 50px;
+    border: none;
+    background: var(--primary-green-color, #40B0A4);
+    margin: 2.5px 0;
+    display: flex;
+    padding: 10px 0.9px 10px 0;
+    width: 206px;
+    height: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+} nav button:hover {
+    background-color: #209084;
+}
+/* End of Navigation Bar */
+
+
+
+
+
+/* Start of Homepage */
+.homepage {
+    background: url('assets/657de0bae2fcd55519d400c8_budget-report-how-to-negociate-with-influencers.png');
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+} .homepage .mainContainer {
+    position: relative;
+    display: flex;
+    padding: 5% 0 10% 5%;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 50vw;
+}
+.homepage .mainContainer .mainLegend {
+    font-family: 'Poppins';
+    position: inherit;
+    width: 50vw;
+    height: fit-content;
+    word-wrap: normal;
+    left: 5vw;
+
+    color: rgba(255, 255, 255, 0.932);
+    font-weight: 700;
+    font-size: 250%;
+    margin: 0 65vw 0 10;
+    transition: 0.5s ease;
+    white-space: nowrap;
+} .homepage .mainContainer .button {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 75px;
+} .homepage .mainbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    left: 2vw;
+
+    width: 25vw;
+    height: 10vh;
+    
+    border: none;
+    border-radius: 50px;
+
+
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.5s ease;
+} .homepage .mainbutton:hover {
+    background-color: #209084;
+}
+/* End of homepage */
+
+
+
+
+
+/* Start of benefits */
+.benefits {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    text-align: center;
+} .benefits div img {
+    margin: 10px;
+    scale: 0.5;
+} .benefits div span {
+    margin: auto 0 auto 0;
+} .benefits div span p {
+    font-family: 'Poppins';
+    height: inherit;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+} .benefits div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} .literasi {
+    height: 600px;
+    text-align: center;
+    align-content: center;
+} .literasi div h2 {
+    font-size: 40px;
+    font-family: 'Poppins';
+} .literasi div h3 {
+    font-size: 40px;
+    font-weight: 150;
+    font-family: 'Poppins';
+}
+/* End of benefits */
+
+
+
+
+
+/* Start of section cards */
+section.card1, section.card2 {
+    height: 500px;
+    margin-bottom: 20vh;
+    justify-content: center;
+    display: flex;
+} div.card1-content, div.card2-content {
+    display: flex;
+    background: #40B0A4;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+} .card1-content span:nth-child(1) {
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    width: 730px;
+} .card2-content span:nth-child(1) {
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    width: 500px;
+    display: flex;
+} .card2-content span:nth-child(1) img {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+} .card1-content span:nth-child(2) {
+    width: 640px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Poppins';
+    justify-content: center;
+} .card2-content span:nth-child(2) {
+    width: 640px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Poppins';
+    justify-content: center;
+} .card2-content span:nth-child(2) h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+} .card2-content span:nth-child(2) button {
+    border: none;
+    background: #209084;
+    color: white;
+    font-family: 'Poppins';
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+} .card2-content span:nth-child(2) button:hover {
+    background-color: #155f58;
+} .card1-content span:nth-child(2) h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+} .card1-content span:nth-child(2) button {
+    border: none;
+    background: #209084;
+    color: white;
+    font-family: 'Poppins';
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 550;
+    transition: all 0.5s ease;
+    cursor: pointer;
+} .card1-content span:nth-child(2) button:hover {
+    background-color: #155f58; 
+} .tombol-mulai-container {
+    text-align: center;
+} .tombol-mulai-container h2 {
+    font-size: 2rem;
+    font-family: 'Poppins';
+} .tombol-mulaibelajar {
+    border: none;
+    background: #40B0A4;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    font-family: 'Poppins';
+    margin-bottom: 20vh;
+    transition: 0.5s ease;
+} .tombol-mulaibelajar:hover {
+    background-color: #209084;
+    cursor: pointer;
+}
+/* End of section cards */
+
+
+
+
+
+/* Start of footer */
+footer {
+    background-color: #40B0A4;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+    gap: 250px;
+    padding-top: 10vh;
+} footer div {
+    border-radius: 25px;
+} .our-location {
+    background-color: #209084;
+    padding: 10px;
+    width: 20vw;
+    height: 20vh;
+} .our-location h4 { /* text: title Uangin */
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+} .our-location a { /* text: lokasi */
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+} .our-location a:hover {
+    color: #404040;
+} footer .footermenus {
+    background-color: #209084;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} footer .footermenus span {
+    font-family: 'Poppins';
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5vw;
+} footer .footermenus a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+} footer .footermenus a:hover {
+    color: #404040;
+}
+/* End of footer */
+
+
+@media only screen and (max-width: 576px) {
+    nav span.resp-nav a {
+        display: none;
+    } nav span:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav span:nth-child(1) a {
+        font-size: 20px;
+    }
+
+    .homepage .mainContainer {
+        position: relative;
+        display: flex;
+        padding: 5% 0% 10% 5%;
+        box-sizing: border-box;
+        height: 80vh;
+        width: 100vw;
+    } .homepage .mainContainer .mainLegend {
+        position: absolute;
+        top: 20vh;
+        width: 75vw;
+        height: 10vh;
+        text-wrap: wrap;
+        font-size: 5vw;
+        text-shadow: 2px 2px 10px gray;
+    } .homepage .mainbutton {
+        width: 50vw;
+        height: 10vh;
+        font-size: 5vw;
+        position: relative;
+        left: 2vw;
+    } .card1, .card2 {
+        scale: 0.4;
+
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+        margin-bottom: 30%;
+    } .benefits img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 5vh;
+    } footer .our-location {
+        width: 75vw;
+        height: 20vh;
+    } footer .footermenus {
+        width: 75vw;
+        height: 20vh;
+    } footer .footermenus span {
+        font-size: 6vw;
+    }
+}

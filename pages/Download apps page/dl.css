@@ -1,0 +1,320 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ============================================== */
+nav {
+    flex-direction: row;
+    box-shadow: var(--m-3-elevation-light-4, 0px 6px 10px 4px rgba(0, 0, 0, 0.15)), var(--m-3-elevation-light-4, 0px 2px 3px 0px rgba(0, 0, 0, 0.3));
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16.5px 39px;
+}
+/* Navbar: Logo */
+nav span:nth-child(1) {
+    margin-right: 24px;
+    width: 120px;
+    justify-content: center;
+}
+nav span:nth-child(1) a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    overflow-wrap: break-word;
+}
+/* Navbar: "Utama" */
+nav span:nth-child(2) {
+    border-radius: 50px;
+    margin: 12.5px 0;
+    display: flex;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+nav span:nth-child(2) a {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+nav span:nth-child(2):hover {
+    background-color: #155f58;
+    border-radius: 3px;
+    padding: 20px;
+    overflow: hidden;
+}
+nav span:nth-child(2) a:hover {
+    color: white;
+} 
+/* Navbar: Tentang */
+nav span:nth-child(3) {
+    border-radius: 50px;
+    margin: 12.5px 0;
+    display: flex;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+nav span:nth-child(3) a {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+nav span:nth-child(3):hover {
+    background-color: #155f58;
+    border-radius: 3px;
+    padding: 20px;
+    overflow: hidden;
+}
+nav span:nth-child(3) a:hover {
+    color: white;
+}
+/* Navbar: Informasi */
+nav span:nth-child(4) {
+    border-radius: 50px;
+    margin: 12.5px 0;
+    display: flex;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+nav span:nth-child(4) a {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+nav span:nth-child(4):hover {
+    background-color: #155f58;
+    border-radius: 3px;
+    padding: 20px;
+    overflow: hidden;
+}
+nav span:nth-child(4) a:hover {
+    color: white;
+}
+/* Button: Mulai Sekarang */
+nav span:nth-child(5) {
+    border-radius: 50px;
+    margin: 12.5px 0;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+nav button {
+    box-shadow: var(--m-3-elevation-light-4, 0px 6px 10px 4px rgba(0, 0, 0, 0.15)), var(--m-3-elevation-light-4, 0px 2px 3px 0px rgba(0, 0, 0, 0.3));
+    border-radius: 50px;
+    border: none;
+    background: var(--primary-green-color, #40B0A4);
+    margin: 2.5px 0;
+    display: flex;
+    padding: 10px 0.9px 10px 0;
+    width: 206px;
+    height: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s ease;
+}
+nav button:hover {
+    background-color: #209084;
+}
+/* ========================================= */
+
+
+body {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+/* CSS landing page */
+.homepage{
+    background: url('assets/657de0bae2fcd55519d400c8_budget-report-how-to-negociate-with-influencers.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.homepage .mainContainer {
+    position: relative;
+    display: flex;
+    padding: 5% 0 10% 5%;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 50vw;
+}
+.homepage .mainContainer .mainLegend {
+    font-family: 'Poppins';
+    position: inherit;
+    color: rgba(255, 255, 255, 0.932);
+    font-weight: 700;
+    font-size: 2vw;
+    margin: 0 65vw 0 10;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+
+.homepage .mainContainer .button {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 75px;
+}
+
+.homepage .mainbutton {
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+    border: none;
+    border-radius: 50px;
+
+    width: 15vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.homepage .mainbutton:hover {
+    background-color: #209084;
+}
+
+.filler{
+    margin-top: 10px;
+    height: 104vh;
+    display: flex;
+}
+
+.filler .side1{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+}
+.filler .side1 h2{
+    width: 80%;
+    text-align: left;
+    padding: 5% 0 1% 20%;
+    font-size: 40px;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+.filler .side1 button{
+    background-color: #40B0A4;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 30%;
+    font-size: 30px;
+    font-family: 'poppins';
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+.filler .side1 button:hover{
+    background-color: #209084;
+}
+.filler .side1 button a{
+    color: #fff;
+    text-decoration: none;
+}
+.filler .side2{
+    width: 50%;
+}
+.img-s2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Start of footer */
+footer {
+    background-color: #40B0A4;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+    gap: 250px;
+    padding-top: 10vh;
+} footer div {
+    border-radius: 25px;
+} .our-location {
+    background-color: #209084;
+    padding: 10px;
+    width: 20vw;
+    height: 20vh;
+} .our-location h4 { /* text: title Uangin */
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+} .our-location a { /* text: lokasi */
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+} .our-location a:hover {
+    color: #404040;
+} footer .footermenus {
+    background-color: #209084;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} footer .footermenus span {
+    font-family: 'Poppins';
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    color: white;
+    font-size: 1vw;
+} footer .footermenus a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+} footer .footermenus a:hover {
+    color: #404040;
+} 
+/* End of footer */
+.hidden {
+    opacity: 0%;
+    transition: all 2.5s;
+} .show {
+    opacity: 100%;
+    scale: 1;
+} 
